@@ -1,0 +1,37 @@
+.processo {
+    margin-top: 50px;
+}
+
+.processo > h1 {
+    font-size: 3rem;
+    font-family: 'Abhaya';
+    color: #A6786D;
+}
+
+.processo ul {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.processo li {
+    background: #E1C3B8;
+    padding: 50px;
+    border-radius: 8px;
+}
+
+.processo li h1 {
+    font-size: 2.25rem;
+    font-family: 'Abhaya';
+    color: #A6786D;
+    text-align: center;
+}
+
+.processo li p {
+    font-size: 1.5rem;
+    font-family: 'ABeeZee';
+    color: #FFF;
+    text-align: center;
+    margin-top: 20px;
+}
