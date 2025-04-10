@@ -1,0 +1,88 @@
+.conteudo {
+    margin-top: 50px;
+    display: grid;
+    gap: 40px;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+}
+
+.intro {
+    margin-top: 50px;
+}
+
+.conteudo h1 {
+    font-size: 3rem;
+    font-family: "Abhaya";
+    color: #A6786D;
+    font-weight: bold;
+}
+
+.conteudo p {
+    margin-top: 20px;
+    color: #898989;
+    font-family: "ABeeZee";
+    font-size: 1.25rem;
+}
+
+.conteudo a {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 1.25rem;
+    color: #fff;
+    background: #A6786D;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-family: "Abhaya";
+
+    transition: .5s;
+}
+
+.conteudo a:hover {
+    background-color: #815f56;
+}
+
+.conteudo a::after {
+    content: "";
+    display: inline-block;
+    background-image: url("../img/icones/clock.svg");
+    width: 19px;
+    height: 19px;
+    margin-left: 8px;
+    align-self: center;
+    vertical-align: middle;
+}
+
+.more {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--cor-secundaria);
+    margin: 20px auto;
+    animation: pulseDown 1.5s infinite ease-in-out;
+}
+
+.more::after {
+    content: '';
+    display: inline-block;
+    width: 31px;
+    height: 31px;
+    background-image: url('../img/icones/arrow.svg'); 
+    background-size: contain; 
+    background-repeat: no-repeat; 
+}
+
+@keyframes pulseDown {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    50% {
+      transform: translateY(10px);
+      opacity: 0.7;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}

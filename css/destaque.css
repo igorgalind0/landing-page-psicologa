@@ -1,0 +1,37 @@
+.destaque {
+    margin-top: 50px;
+}
+
+.destaque ul {
+    display: flex;
+    gap: 40px;
+    text-align: center;
+    justify-content: center;
+}
+
+.destaque li {
+    background: #A6786D;
+    padding: 20px;
+    width: 460px;
+    height: 255px;
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.destaque li h1 {
+    font-size: 1.875rem;
+    font-family: 'Abhaya';
+    color: #E1C3B8;
+}
+
+.destaque li p {
+    margin-top: 15px;
+    font-size: 1.25rem;
+    color: #fff;
+    font-family: 'ABeeZee';
+}

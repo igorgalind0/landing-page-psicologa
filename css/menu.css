@@ -1,0 +1,38 @@
+.menu {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.menu-list {
+    display: flex;
+    gap: 40px;
+}
+
+.menu-list a{
+    font-family: "Abhaya";
+    font-weight: 500;
+    color: #A6786D;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.menu-list a:hover {
+    color: #815f56;
+}
+
+.menu-list li:last-child a {
+    background-color: #A6786D;
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.menu-list li:last-child a:hover {
+    background-color: #815f56;
+}
