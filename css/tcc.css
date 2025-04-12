@@ -1,0 +1,26 @@
+.tcc {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.tcc h1 {
+    font-size: 3rem;
+    font-family: 'Abhaya';
+    color: #A6786D;
+}
+
+.tcc h2 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-family: 'ABeeZee';
+    font-weight: 500;
+    color: #A6786D;
+}
+
+.tcc p {
+    margin-top: 20px;
+    font-size: 1.25rem;
+    font-family: 'ABeeZee';
+    color: #898989;
+}

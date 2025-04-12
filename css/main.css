@@ -24,7 +24,7 @@
     font-size: 1.25rem;
 }
 
-.conteudo a {
+.button {
     display: inline-block;
     margin-top: 20px;
     font-size: 1.25rem;
@@ -37,11 +37,11 @@
     transition: .5s;
 }
 
-.conteudo a:hover {
+.button:hover {
     background-color: #815f56;
 }
 
-.conteudo a::after {
+.button::after {
     content: "";
     display: inline-block;
     background-image: url("../img/icones/clock.svg");

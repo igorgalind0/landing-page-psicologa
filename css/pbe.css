@@ -1,0 +1,61 @@
+.pbe {
+    margin-top: 50px;
+
+}
+
+.pbe h1 {
+    font-size: 3rem;
+    font-family: 'Abhaya';
+    color: #A6786D;
+}
+
+.pbe p {
+    font-size: 1.25rem;
+    font-family: 'ABeeZee';
+    color: #A6786D;
+}
+
+.pbe ul {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.pbe li {
+    text-align: center;
+    background: #E1C3B8;
+    padding: 50px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.pbe span {
+    background: #A6786D;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-family: 'Abhaya';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 2rem;
+
+    position: absolute;
+    top: -25px;   /* metade da altura pra subir metade da bolinha */
+    left: -25px;  /* metade da largura pra sair pela esquerda */
+}
+
+.pbe li > h1 {
+    font-family: 'Abhaya';
+    font-size: 2.25rem;
+    color: #A6786D;
+}
+
+.pbe li > p {
+    margin-top: 10px;
+    font-family: 'ABeeZee';
+    color: #FFF;
+    font-size: 1.5rem;
+}
