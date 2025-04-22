@@ -52,6 +52,10 @@
     vertical-align: middle;
 }
 
+.conteudo img {
+    animation: flutuar 3s ease-in-out infinite;
+}
+
 .more {
     display: flex;
     width: 40px;
@@ -84,5 +88,30 @@
     100% {
       transform: translateY(0);
       opacity: 1;
+    }
+}
+
+@media (max-width: 900px) {
+    .conteudo h1 {
+        font-size: 2rem;
+    }
+    .conteudo p {
+        font-size: 1rem;
+    }
+    .conteudo .button {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .conteudo {
+        grid-template-columns: 1fr;
+    }
+    .conteudo img {
+        display: block;
+        margin: 0px auto 0;
+    }
+    .conteudo {
+        gap: 0;
     }
 }

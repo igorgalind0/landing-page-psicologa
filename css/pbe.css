@@ -28,6 +28,13 @@
     padding: 50px;
     border-radius: 8px;
     position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    cursor: pointer;
+}
+
+.pbe li:hover {
+    transform: translateY(-10px);
 }
 
 .pbe span {
@@ -43,8 +50,9 @@
     font-size: 2rem;
 
     position: absolute;
-    top: -25px;   /* metade da altura pra subir metade da bolinha */
-    left: -25px;  /* metade da largura pra sair pela esquerda */
+    top: -25px;
+    left: -25px;
+    margin-left: 10px;
 }
 
 .pbe li > h1 {
@@ -58,4 +66,56 @@
     font-family: 'ABeeZee';
     color: #FFF;
     font-size: 1.5rem;
+}
+
+@media (max-width: 900px) {
+    .pbe h1 {
+        font-size: 2rem;
+    }
+
+    .pbe p {
+        font-size: 1rem;
+    }
+
+    .pbe li > h1 {
+        font-size: 1.25rem;
+    }
+
+    .pbe li > p {
+        font-size: 1rem
+    }
+
+    .pbe li {
+        padding: 30px;
+    }
+
+    span {
+        
+    }
+}
+
+@media (max-width: 750px) {
+    .pbe ul {
+        grid-template-columns: 1fr;
+    }
+
+    .pbe span {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+        top: -20px;
+        left: -20px;
+    }
+
+    .pbe li {
+        padding: 40px;
+    }
+
+    .pbe li > h1 {
+        font-size: 1.6rem;
+    }
+
+    .pbe li > p {
+        font-size: 1.1rem;
+    }
 }

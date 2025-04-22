@@ -35,3 +35,13 @@
     color: #fff;
     font-family: 'ABeeZee';
 }
+
+@media (max-width: 900px) {
+    .atendimento h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 750px) {
+
+}

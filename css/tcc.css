@@ -24,3 +24,28 @@
     font-family: 'ABeeZee';
     color: #898989;
 }
+
+.tcc div > img {
+    animation: flutuar 3s ease-in-out infinite;
+}
+
+@media (max-width: 900px) {
+    .tcc h1 {
+        font-size: 2rem;
+    }
+
+    .tcc h2 {
+        font-size: 1.25rem;
+    }
+
+    .tcc p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .tcc {
+        grid-template-columns: 1fr;
+
+    }
+}

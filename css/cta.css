@@ -1,0 +1,67 @@
+.cta {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.cta .conteudo {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.cta h1 {
+    font-size: 3rem;
+    font-family: 'Abhaya';
+    color: #A6786D;
+}
+
+.cta p {
+    font-size: 1.5rem;
+    color: #898989;
+}
+
+.cta .button {
+    margin-top: 40px;
+    padding: 20px 40px !important;
+    font-size: 1.5rem;
+}
+
+/* Responsividade para telas de até 900px */
+@media (max-width: 900px) {
+    .cta h1 {
+        font-size: 2rem;
+    }
+    .cta p {
+        margin-top: 10px;
+        font-size: 1.25rem;
+    }
+}
+
+/* Responsividade para telas de até 750px */
+@media (max-width: 750px) {
+    .cta .conteudo {
+        grid-template-columns: 1fr;
+        margin-top: 20px
+    }
+
+    .cta .conteudo img {
+        display: none;
+    }
+}
+
+/* Responsividade para telas de até 500px */
+@media (max-width: 500px) {
+    .cta h1 {
+        font-size: 1.5rem; /* Reduz o tamanho do título */
+    }
+
+    .cta p {
+        font-size: 1rem; /* Reduz o tamanho do texto */
+    }
+
+    .cta .button {
+        font-size: 1rem; /* Reduz o tamanho do botão */
+        padding: 15px 30px; /* Ajusta o padding do botão para caber melhor em telas pequenas */
+    }
+}

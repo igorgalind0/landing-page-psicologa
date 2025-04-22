@@ -13,13 +13,23 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+    list-style: none;
+    padding: 0;
+
+    cursor: pointer;
 }
 
 .processo li {
     background: #E1C3B8;
     padding: 50px;
     border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.processo li:hover {
+    transform: scale(1.03);
+}
+
 
 .processo li h1 {
     font-size: 2.25rem;
@@ -34,4 +44,28 @@
     color: #FFF;
     text-align: center;
     margin-top: 20px;
+}
+
+@media (max-width: 900px) {
+    .processo > h1 {
+        font-size: 2rem;
+    }
+
+    .processo li h1 {
+        font-size: 1.25rem;
+    }
+
+    .processo li p {
+        font-size: 1rem;
+    }
+
+    .processo li {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 750px) {
+    .processo ul {
+        grid-template-columns: 1fr;
+    }
 }

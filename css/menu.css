@@ -11,17 +11,34 @@
     gap: 40px;
 }
 
-.menu-list a{
+.menu-list a {
     font-family: "Abhaya";
     font-weight: 500;
     color: #A6786D;
     font-size: 1rem;
     cursor: pointer;
-    transition: .5s;
+    position: relative;
+    transition: color 0.5s ease;
+    text-decoration: none;
+}
+
+.menu-list a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px; /* ajusta a posição do traço */
+    width: 0%;
+    height: 2px;
+    background-color: #A6786D;
+    transition: width 0.3s ease;
 }
 
 .menu-list a:hover {
     color: #815f56;
+}
+
+.menu-list a:hover::after {
+    width: 100%;
 }
 
 .menu-list li:last-child a {
@@ -35,4 +52,97 @@
 
 .menu-list li:last-child a:hover {
     background-color: #815f56;
+}
+
+[data-menu="button"] {
+    display: none;
+}
+
+@media (max-width: 1020px) {
+    .menu ul {
+        margin: 30px auto;
+    }
+}
+
+@media (max-width: 800px) {
+    .menu {
+        flex-wrap: nowrap;
+    }
+
+    [data-menu="button"] {
+        display: flex;
+        align-items: center;
+        font-family: 'Abhaya';
+        font-weight: 500;
+        font-size: 1rem;
+        color: #fff;
+        border-radius: 4px;
+        padding: 10px;
+        background-color: #A6786D;
+        border: none;
+        z-index: 300;
+        cursor: pointer;
+        position: relative;
+    }
+
+    [data-menu="button"]:hover {
+        background: #815f56;
+        transition: .2s;
+    }
+
+    [data-menu="button"]::before {
+        margin-right: 4px;
+        content: '';
+        display: inline-block;
+        height: 2px;
+        width: 12px;
+        background: #fff;
+        box-shadow: 0 4px #fff, 0 -4px #fff;
+    }
+
+    .menu-list {
+        display: none !important;
+    }
+
+    .menu-list.ativo {
+        display: block !important;
+        position: absolute;
+        background: #815f56;
+        padding: 25px;
+        top: 80px;
+        right: 20px;
+        border-radius: 0 0 8px 8px;
+        box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
+        animation: slideDown 0.3s ease-out;
+        text-align: left;
+    }
+
+    .menu-list.ativo li {
+        margin-top: 5px;
+        color: #fff;
+    }
+
+    .menu-list.ativo li a {
+        color: #fff;
+    }
+
+    .menu-list.ativo li a:hover {
+        border-bottom: 3px solid #fff;
+    }
+
+    .menu-list.ativo .button-menu {
+        display: inline-block;
+        margin-top: 20px;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

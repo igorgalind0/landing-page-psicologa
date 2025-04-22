@@ -5,7 +5,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: #F2F2F2;
+    background-color: #F7EFEC;
     /* background-color: rgb(250, 242, 242); */
 }
 
@@ -32,4 +32,16 @@ img {
     max-width: 100%;
     height: auto;
     display: block;
+}
+
+@keyframes flutuar {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
