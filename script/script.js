@@ -77,3 +77,60 @@ initAnimacaoScroll();
 if (window.SimpleAnime) {
     new SimpleAnime();
 }
+
+function initAnimaNumeros() {
+    function animaNumero(numero) {
+      let start = 0;
+      const total = +numero.innerText;
+      const duracao = 1500;
+      let startTime = null;
+  
+      function animar(timestamp) {
+        if (!startTime) startTime = timestamp;
+        const progresso = timestamp - startTime;
+        const progressoRelativo = Math.min(progresso / duracao, 1);
+        numero.innerText = Math.floor(progressoRelativo * total);
+  
+        if (progresso < duracao) {
+          requestAnimationFrame(animar);
+        } else {
+          numero.innerText = total;
+        }
+      }
+  
+      requestAnimationFrame(animar);
+    }
+  
+    function animaNumeros() {
+      const numeros = document.querySelectorAll('[data-numero]');
+      numeros.forEach((numero) => {
+        numero.classList.remove('animado');
+        animaNumero(numero);
+        numero.classList.add('animado');
+      });
+    }
+  
+    const observerTargetSections = document.querySelectorAll('.sobre-descricao section');
+  
+    const observer = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+        if (
+          mutation.attributeName === 'class' &&
+          mutation.target.classList.contains('ativo') &&
+          mutation.target.querySelector('.numeros')
+        ) {
+          animaNumeros();
+        }
+      });
+    });
+  
+    observerTargetSections.forEach((section) => {
+      observer.observe(section, { attributes: true });
+    });
+  }
+  
+  initAnimaNumeros();
+  
+  
+  
+  

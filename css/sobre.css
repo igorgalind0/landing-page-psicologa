@@ -68,6 +68,13 @@
     border-bottom: 3px solid #845a4d;
 }
 
+.sobre-descricao section.ativo .experiencia-list li h1::before {
+    content: '+';
+    font-size: 3rem;
+    align-items: center;
+    font-family: 'Abhaya';
+}
+
 @keyframes fadeUp {
     from {
         opacity: 0;
@@ -89,6 +96,17 @@
     .sobre-lista li {
         font-size: 1rem;
         gap: 20px;
+    }
+    .sobre-descricao section.ativo .experiencia-list li h1 {
+        font-size: 2rem;
+    }
+    .sobre-descricao section.ativo .experiencia-list li p {
+        font-size: 1rem;
+    }
+    .sobre-descricao section.ativo .experiencia-list li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
     }
 }
 
