@@ -46,6 +46,9 @@
 @media (max-width: 750px) {
     .tcc {
         grid-template-columns: 1fr;
+    }
 
+    .tcc div > img {
+        margin-top: 20px;
     }
 }
