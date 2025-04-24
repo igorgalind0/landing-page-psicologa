@@ -115,6 +115,7 @@
         box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
         animation: slideDown 0.3s ease-out;
         text-align: left;
+        z-index: 400;
     }
 
     .menu-list.ativo li {
