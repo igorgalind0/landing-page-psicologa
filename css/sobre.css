@@ -17,7 +17,6 @@
     font-size: 1.25rem;
     font-family: 'ABeeZee';
     color: #E1C3B8;
-
     cursor: pointer;
 }
 
@@ -41,12 +40,18 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
-
+    
     animation: fadeUp 0.6s ease forwards;
 }
 
 .sobre-descricao section.ativo .experiencia-list li {
     margin-top: 20px;
+    align-items: center;
+}
+
+.sobre-descricao section.ativo .experiencia-list li div {
+    display: flex;
+    align-items: center;
 }
 
 .sobre-descricao section.ativo .experiencia-list li h1 {
@@ -68,11 +73,12 @@
     border-bottom: 3px solid #845a4d;
 }
 
-.sobre-descricao section.ativo .experiencia-list li h1::before {
-    content: '+';
-    font-size: 3rem;
+.numeros li span {
+    font-size: 2rem;
     align-items: center;
-    font-family: 'Abhaya';
+    font-family: 'ABeeZee';
+    color: #845a4d;
+    display: flex;
 }
 
 @keyframes fadeUp {
@@ -107,6 +113,10 @@
         display: flex;
         align-items: center;
         gap: 10px;
+        margin-top: 0;
+    }
+    .sobre-descricao section.ativo .experiencia-list {
+        margin-top: 20px;
     }
 }
 
